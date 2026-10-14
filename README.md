@@ -3,24 +3,24 @@
 **Use case:** UniPilot (P-127), Trợ lý AI Tuyển sinh.
 
 **Nội dung repo:**
-- [`dashboard/dashboard_hanh_dong_v2.xlsx`](dashboard/dashboard_hanh_dong_v2.xlsx): bản cuối, sau kiểm tra chéo.
+- [`dashboard/dashboard_hanh_dong_v2.xlsx`](dashboard/dashboard_hanh_dong_v2.xlsx): bản cuối, sau tự rà soát.
 - [`memo/memo_quyet_dinh.md`](memo/memo_quyet_dinh.md): memo quyết định.
-- [`v1/dashboard_hanh_dong_v1.xlsx`](v1/dashboard_hanh_dong_v1.xlsx): bản trước phản biện, giữ lại để đối chiếu.
+- [`v1/dashboard_hanh_dong_v1.xlsx`](v1/dashboard_hanh_dong_v1.xlsx): bản trước rà soát, giữ lại để đối chiếu.
 
 Dashboard v2 có 8 sheet: phạm vi, chẩn đoán (5 câu hỏi · Gartner-Lite · Mollick · ADKAR), bằng chứng, AS-IS/TO-BE, lộ trình 30–60–90, Dashboard, thay đổi v1→v2, và sheet tự kiểm tính bằng công thức.
 
 ## 1. Thành viên
 
-> Cột “Góp ý đã đưa cho nhóm bạn” và cột “Góp ý từ” (memo §3, sheet `7_Thay_doi_v1_v2`) là **minh hoạ**, viết theo cho phép của trợ giảng. Chi tiết ở [`minhhoa.md`](minhhoa.md).
+| Họ tên | MSSV | Phần phụ trách |
+| --- | --- | --- |
+| Đỗ Lê Việt Anh | 2A202602491 | Khoá phạm vi, chốt nguyên nhân gốc, memo quyết định |
+| Nguyễn Thị Minh Khánh | 2A202602546 | Gartner-Lite, readiness dữ liệu (data owner, lịch cập nhật nguồn) |
+| Lại Bá Quân | 2A202602495 | Mollick (ma trận chủ đề người–AI), AS-IS / TO-BE |
+| Nguyễn Quang Huy | 2A202602421 | Dashboard chỉ số: product/workflow metric, nguồn log, ngưỡng và hành động |
+| Lê Thị Châm Anh | 2A202602846 | ADKAR, kế hoạch hỗ trợ cán bộ, lộ trình 30–60–90 |
+| Lê Thị Hoài Thương | 2A202602898 | Thu thập bằng chứng (log eval, git log, mã nguồn), tổng hợp thay đổi v1 → v2 |
 
-| Họ tên | MSSV | Phần phụ trách | Góp ý đã đưa cho nhóm bạn |
-| --- | --- | --- | --- |
-| Đỗ Lê Việt Anh | 2A202602491 | Khoá phạm vi, chốt nguyên nhân gốc, memo quyết định | *Minh hoạ → nhóm giả định “Trợ lý AI soạn hợp đồng cho phòng pháp chế”* — Phạm vi: đang ôm 5 quy trình và “AI cho cả phòng pháp chế”; đề xuất khoá còn 1 sản phẩm + 3 quy trình (soạn nháp → rà điều khoản → phê duyệt). |
-| Nguyễn Thị Minh Khánh | 2A202602546 | Gartner-Lite, readiness dữ liệu (data owner, lịch cập nhật nguồn) | *Minh hoạ → nhóm giả định “Trợ lý AI soạn hợp đồng cho phòng pháp chế”* — Framework: Gartner-Lite chấm Dữ liệu ĐẠT nhưng kho hợp đồng mẫu không có owner và phiên bản; đề xuất chấm lại THIẾU và đưa vào nguyên nhân gốc. |
-| Lại Bá Quân | 2A202602495 | Mollick (ma trận chủ đề người–AI), AS-IS / TO-BE | *Minh hoạ → nhóm giả định “Trợ lý AI soạn hợp đồng cho phòng pháp chế”* — Framework: TO-BE chỉ chèn thêm bước “hỏi AI” vào AS-IS; đề xuất dùng Mollick tách rõ điều khoản rủi ro cao (phạt, bồi thường) cho người giữ quyền duyệt. |
-| Nguyễn Quang Huy | 2A202602421 | Dashboard chỉ số: product/workflow metric, nguồn log, ngưỡng và hành động | *Minh hoạ → nhóm giả định “Trợ lý AI soạn hợp đồng cho phòng pháp chế”* — Chỉ số: dashboard chỉ có số lượt soạn bằng AI (activity); đề xuất đổi sang tỷ lệ hợp đồng không bị pháp chế trả về sửa, đo từ log phê duyệt. |
-| Lê Thị Châm Anh | 2A202602846 | ADKAR, kế hoạch hỗ trợ cán bộ, lộ trình 30–60–90 | *Minh hoạ → nhóm giả định “Trợ lý AI soạn hợp đồng cho phòng pháp chế”* — Hành động: ADKAR ghi nghẽn ở Desire nhưng giải pháp duy nhất là mở lớp đào tạo; đề xuất hiển thị điều khoản nguồn để người dùng tự kiểm chứng. |
-| Lê Thị Hoài Thương | 2A202602898 | Thu thập bằng chứng (log eval, git log, mã nguồn), tổng hợp thay đổi v1 → v2 | *Minh hoạ → nhóm giả định “Trợ lý AI soạn hợp đồng cho phòng pháp chế”* — Hành động: cột “khi chỉ số xấu” trống ở 3/5 dòng và lộ trình 30–60–90 không có gate; đề xuất mỗi dòng có ngưỡng số và một hành động cụ thể. |
+**Kiểm tra chéo (chặng 3):** nhóm không có nhóm đối ứng, nên không có góp ý đưa cho nhóm bạn và không nhận góp ý từ nhóm khác. Bản v2 là kết quả nhóm tự rà soát bản v1 theo 4 trục (Phạm vi · Framework · Chỉ số · Hành động); 6 thay đổi ghi ở sheet `7_Thay_doi_v1_v2` và memo §3.
 
 ## 2. Phạm vi
 
