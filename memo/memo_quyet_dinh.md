@@ -42,14 +42,16 @@ Ba framework dẫn về cùng một chỗ: không có cơ chế chứng minh ch�
 
 ## 3. Thay đổi sau phản biện (v1 → v2)
 
+*Góp ý minh hoạ, viết theo cho phép của trợ giảng: nhóm không có nhóm đối ứng ở chặng 3, nên các thay đổi đến từ tự rà soát theo 4 trục phản biện.*
+
 | # | Bản v1 | Bản v2 | Góp ý từ |
 | --- | --- | --- | --- |
-| **TĐ1** | "Tỷ lệ AI trả lời" là chỉ số quyết định, mục tiêu ≥75% | Hạ xuống chỉ theo dõi (T1). Thay bằng **W1**: tỷ lệ câu lặp lại AI xử lý xong mà cán bộ không phải làm lại, và **P1**: QA mẫu 50 hội thoại thật mỗi tuần | *[Điền: Nhóm __ — tên người góp ý]* |
-| **TĐ2** | Baseline chất lượng = 100% (11/11, eval local) | P1 chưa có baseline cho tới khi đo trên hội thoại thật với 2 người chấm độc lập. Thêm **P4** (từ chối đúng, baseline 0/4) | *[Điền]* |
-| **TĐ3** | Không có chỉ số nào cho phía dữ liệu của NN1 | Thêm **W4** (độ trễ cập nhật nguồn, mục tiêu 5/5 nhóm tài liệu có owner) và **P2** (có nguồn kèm năm áp dụng) | *[Điền]* |
-| **TĐ4** | Cột "khi chỉ số xấu" chung chung; owner là "Nhóm P-127" | Mỗi dòng có ngưỡng bằng số, hành động có thời hạn, và owner là một vai trò trong tổ chức | *[Điền]* |
-| **TĐ5** | Lộ trình 30–60–90 là danh sách việc | Mỗi giai đoạn có gate định lượng và owner riêng, kèm quy tắc mở rộng / sửa / dừng | *[Điền]* |
-| **TĐ6** | Mục tiêu "+10% tỷ lệ nộp hồ sơ" và CSAT là chỉ số quyết định | Tỷ lệ nộp hồ sơ chuyển sang theo dõi (V2, mục tiêu "không giảm"). Giá trị đo bằng **V1**: giờ cán bộ tính từ log, thay cho số tự khai 4–6 giờ/ngày | *[Điền]* |
+| **TĐ1** | "Tỷ lệ AI trả lời" là chỉ số quyết định, mục tiêu ≥75% | Hạ xuống chỉ theo dõi (T1). Thay bằng **W1**: tỷ lệ câu lặp lại AI xử lý xong mà cán bộ không phải làm lại, và **P1**: QA mẫu 50 hội thoại thật mỗi tuần | *Minh hoạ: tự rà soát theo trục Chỉ số (Nguyễn Quang Huy)* |
+| **TĐ2** | Baseline chất lượng = 100% (11/11, eval local) | P1 chưa có baseline cho tới khi đo trên hội thoại thật với 2 người chấm độc lập. Thêm **P4** (từ chối đúng, baseline 0/4) | *Minh hoạ: tự rà soát theo trục Chỉ số – bằng chứng (Lê Thị Hoài Thương)* |
+| **TĐ3** | Không có chỉ số nào cho phía dữ liệu của NN1 | Thêm **W4** (độ trễ cập nhật nguồn, mục tiêu 5/5 nhóm tài liệu có owner) và **P2** (có nguồn kèm năm áp dụng) | *Minh hoạ: tự rà soát theo trục Framework (Nguyễn Thị Minh Khánh)* |
+| **TĐ4** | Cột "khi chỉ số xấu" chung chung; owner là "Nhóm P-127" | Mỗi dòng có ngưỡng bằng số, hành động có thời hạn, và owner là một vai trò trong tổ chức | *Minh hoạ: tự rà soát theo trục Hành động (Đỗ Lê Việt Anh)* |
+| **TĐ5** | Lộ trình 30–60–90 là danh sách việc | Mỗi giai đoạn có gate định lượng và owner riêng, kèm quy tắc mở rộng / sửa / dừng | *Minh hoạ: tự rà soát theo trục Hành động – lộ trình (Lê Thị Châm Anh)* |
+| **TĐ6** | Mục tiêu "+10% tỷ lệ nộp hồ sơ" và CSAT là chỉ số quyết định | Tỷ lệ nộp hồ sơ chuyển sang theo dõi (V2, mục tiêu "không giảm"). Giá trị đo bằng **V1**: giờ cán bộ tính từ log, thay cho số tự khai 4–6 giờ/ngày | *Minh hoạ: tự rà soát theo trục Chỉ số – giá trị (Lại Bá Quân)* |
 
 ## 4. Quyết định: **SỬA**
 
